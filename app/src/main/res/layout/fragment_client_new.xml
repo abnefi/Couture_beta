@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container_new_client"
+    tools:context=".main.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_client"
+            android:layout_width="96dp"
+            android:clickable="true"
+            android:layout_height="96dp"
+            android:src="@drawable/face" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:gravity="left"
+                        android:text="@string/KEY_NOM" />
+                    <EditText
+                        android:id="@+id/nom_client"
+                        android:layout_width="10000dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords">
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:gravity="left"
+                        android:text="@string/KEY_TELEPHONE" />
+                    <EditText
+                        android:id="@+id/nom_telephone"
+                        android:layout_width="10000dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:gravity="left"
+                        android:text="@string/KEY_SEXE" />
+                    <Spinner
+                        android:id="@+id/nom_sexe"
+                        android:layout_width="10000dp"
+                        android:layout_height="40dp"
+                        android:drawSelectorOnTop="true"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="left"
+                        android:text="@string/KEY_TEINT" />
+                    <Spinner
+                        android:id="@+id/nom_teint"
+                        android:layout_height="40dp"
+                        android:drawSelectorOnTop="true"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:textSize="20px"
+        android:text="Mesures (cm)"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingRight="10dp"
+            android:scrollbars="vertical"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:gravity="left"
+                        android:text="@string/KEY_HPOITRINE" />
+                    <EditText
+                        android:id="@+id/hpoitrine"
+                        android:layout_width="10000dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGBUSTE" />
+                    <EditText
+                        android:id="@+id/lgbuste"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGCORSAGE" />
+                    <EditText
+                        android:id="@+id/lgcorsage"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGROBE" />
+                    <EditText
+                        android:id="@+id/lgrobe"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_ENCOLURE" />
+                    <EditText
+                        android:id="@+id/encolure"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_CADEVANT" />
+                    <EditText
+                        android:id="@+id/cadevant"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_TRPOITRINE" />
+                    <EditText
+                        android:id="@+id/trpoitrine"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_ECARTSEIN" />
+                    <EditText
+                        android:id="@+id/ecartsein"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_TRTAILLE" />
+                    <EditText
+                        android:id="@+id/trtaille"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_TRBASSIN" />
+                    <EditText
+                        android:id="@+id/trbassin"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGJUPE" />
+                    <EditText
+                        android:id="@+id/lgjupe"
+                        android:layout_width="10000dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGPANTALON" />
+                    <EditText
+                        android:id="@+id/lgpantalon"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGDOS" />
+                    <EditText
+                        android:id="@+id/lgdos"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_CADOS" />
+                    <EditText
+                        android:id="@+id/cados"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LARGDOS" />
+                    <EditText
+                        android:id="@+id/largdos"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_LGMANCHE" />
+                    <EditText
+                        android:id="@+id/lgmanche"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_TRMANCHE" />
+                    <EditText
+                        android:id="@+id/trmanche"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_POIGNET" />
+                    <EditText
+                        android:id="@+id/poignet"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/KEY_PENTE" />
+                    <EditText
+                        android:id="@+id/pente"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/observation"
+                        android:layout_height="50dp"
+                        android:padding="10dip"
+                        android:layout_span="2"
+                        android:hint="Observation" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

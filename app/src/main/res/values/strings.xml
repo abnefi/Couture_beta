@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">CoutureApp</string>
+    <string name="title_client">CLIENTS</string>
+    <string name="title_commande">COMMANDES</string>
+    <string name="title_catalogue">CATALOGUE</string>title_synchro
+    <string name="action_search">RECHERCHE</string>
+    <string name="title_synchro">Synchronisation</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_close">Fermer</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="action_new">Nouveau</string>
+    <string name="KEY_NOM">Nom : </string>
+    <string name="KEY_Model">Modèle</string>
+    <string name="KEY_AVANCE">Avance</string>
+    <string name="KEY_TELEPHONE">Téléphone : </string>
+    <string name="KEY_SEXE">Sexe : </string>
+    <string name="KEY_PRIX">Prix</string>
+    <string name="KEY_TEINT">Teint : </string>
+    <string name="KEY_HPOITRINE">H Poitrine : </string>
+    <string name="KEY_LGBUSTE">Lg Buste : </string>
+    <string name="KEY_LGCORSAGE">Lg Corsage : </string>
+    <string name="KEY_LGROBE">Lg Robe : </string>
+    <string name="KEY_ENCOLURE">Encolure : </string>
+    <string name="KEY_CADEVANT">Ca devant : </string>
+    <string name="KEY_TRPOITRINE">Tr Poitrine : </string>
+    <string name="KEY_ECARTSEIN">Ecart sein : </string>
+    <string name="KEY_TRTAILLE">Tr de Taille : </string>
+    <string name="KEY_TRBASSIN">Tr de Bassin : </string>
+    <string name="KEY_LGJUPE">Lg Jupe : </string>
+    <string name="KEY_LGPANTALON">Lg Pantalon : </string>
+    <string name="KEY_LGDOS">Lg Dos : </string>
+    <string name="KEY_CADOS">Ca Dos : </string>
+    <string name="KEY_LARGDOS">Larg Dos : </string>
+    <string name="KEY_LGMANCHE">Lg Manche : </string>
+    <string name="KEY_TRMANCHE">Tr de Manche : </string>
+    <string name="KEY_POIGNET">Poignet : </string>
+    <string name="KEY_PENTE">Pente : </string>
+    <string name="KEY_OBSERVATION">Observation</string>
+    <string-array name="sexes">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="teints">
+        <item>Noir</item>
+        <item>Clair</item>
+    </string-array>
+    <string-array name="modeles">
+        <item>Manche Courte</item>
+        <item>Manche Longue</item>
+        <item>Pantallon</item>
+        <item>Veste</item>
+        <item>Tenue locale</item>
+        <item>Robe</item>
+        <item>Jupe</item>
+        <item>Complet</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

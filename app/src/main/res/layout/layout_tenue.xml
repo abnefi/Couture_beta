@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/newPagne"
+        android:clickable="true"
+        android:onClick="newPagne"
+        android:textSize="20px"
+        android:text="Prendre une photo du tissu ..."
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:id="@+id/imagepagne"
+        android:clickable="true"
+        android:onClick="newPagne"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/emptypicture"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/newModel"
+        android:clickable="true"
+        android:onClick="newModele"
+        android:textSize="20px"
+        android:text="Choisir un modèle ..."
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:id="@+id/imagemodel"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="newModele"
+        android:src="@drawable/emptypicture"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawSelectorOnTop="true"/>
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/KEY_PRIX">
+    </EditText>
+
+    <EditText
+        android:id="@+id/observation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/KEY_OBSERVATION">
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.MainActivity">
+
+    <item android:id="@+id/close_commande"
+        android:title="@string/action_close"
+        android:icon="@drawable/cancel16"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/add_commande"
+        android:title="@string/action_save"
+        android:icon="@drawable/valide"
+        android:visible="false"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom" />
+
+</menu>
